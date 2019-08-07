@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#SBATCH --partition=bgmp        ### Partition (like a queue in PBS)
+#SBATCH --job-name=grep-N-idx    ### Job Name
+#SBATCH --output=slurm-%j-%x.out         ### File in which to store job output
+#SBATCH --time=0-01:00:00       ### Wall clock time limit in Days-HH:MM:SS
+#SBATCH --nodes=1               ### Number of nodes needed for the job
+#SBATCH --ntasks-per-node=1     ### Number of tasks to be launched per Node
+#SBATCH --account=bgmp      ### Account used for job submission
+#SBATCH --cpus-per-task=1    ### Number of cpus (cores) per task
+
+/usr/bin/time -v zcat /projects/bgmp/sseale/projects/demult/1294_S1_L008_R2_001.fastq.gz /projects/bgmp/sseale/projects/demult/1294_S1_L008_R3_001.fastq.gz | grep -B 1 "^+" | grep -v "^-" | grep -v "^+" | grep -c "N"
