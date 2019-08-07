@@ -27,7 +27,8 @@ output: 7304664
 
 **Part 2**
 
-Problem defined concisely:\n
+Problem defined concisely:
+
 -Demultiplex the PE sequencing run, separating the perfect match read pairs, unknown/low quality read pairs, and index hopping read pairs. Calculate number of occurrences of each.
 
 Problem defined in detail:\n
