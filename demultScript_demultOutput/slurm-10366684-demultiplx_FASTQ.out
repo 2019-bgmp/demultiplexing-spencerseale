@@ -1,0 +1,54 @@
+Number of total read pairs processed: 363246735
+Number of read pairs passing quality check and written out: 225096694, 61.96798823257145%
+Number of read pairs omitted due to index hopping: 329570, 0.09072896415710385%
+Number of read pairs omitted due to unknown index seq or low quality: 137820471, 37.94128280327145%
+
+Sample having index GTAGCGTA, yielded 2.54235586418697% of the total read pairs passing QC and written out.
+Sample having index CGATCGAT, yielded 1.878099107044193% of the total read pairs passing QC and written out.
+Sample having index GATCAAGG, yielded 2.029527363915882% of the total read pairs passing QC and written out.
+Sample having index AACAGCGA, yielded 2.8194869890003806% of the total read pairs passing QC and written out.
+Sample having index TAGCCATG, yielded 3.1503003771348146% of the total read pairs passing QC and written out.
+Sample having index CGGTAATC, yielded 1.0494925349725484% of the total read pairs passing QC and written out.
+Sample having index CTCTGGAT, yielded 10.796892912163338% of the total read pairs passing QC and written out.
+Sample having index TACCGGAT, yielded 21.862118952311224% of the total read pairs passing QC and written out.
+Sample having index CTAGCTCA, yielded 5.7657728193911195% of the total read pairs passing QC and written out.
+Sample having index CACTTCAC, yielded 1.1404587754629574% of the total read pairs passing QC and written out.
+Sample having index GCTACTCT, yielded 1.904509090657724% of the total read pairs passing QC and written out.
+Sample having index ACGATCAG, yielded 2.626664077083247% of the total read pairs passing QC and written out.
+Sample having index TATGGCAC, yielded 3.3841727591076927% of the total read pairs passing QC and written out.
+Sample having index TGTTCCGT, yielded 5.065167238751183% of the total read pairs passing QC and written out.
+Sample having index GTCCTAAG, yielded 2.740273031286723% of the total read pairs passing QC and written out.
+Sample having index TCGACAAG, yielded 1.170768416527699% of the total read pairs passing QC and written out.
+Sample having index TCTTCGAC, yielded 13.23963514097635% of the total read pairs passing QC and written out.
+Sample having index ATCATGCG, yielded 3.0666270025271896% of the total read pairs passing QC and written out.
+Sample having index ATCGTGGT, yielded 2.0874238161845238% of the total read pairs passing QC and written out.
+Sample having index TCGAGAGT, yielded 3.2899501402717184% of the total read pairs passing QC and written out.
+Sample having index TCGGATTC, yielded 1.2696743560347448% of the total read pairs passing QC and written out.
+Sample having index GATCTTGC, yielded 1.1639357972978492% of the total read pairs passing QC and written out.
+Sample having index AGAGTCCA, yielded 3.366449708941527% of the total read pairs passing QC and written out.
+Sample having index AGGATAGC, yielded 2.590243728768402% of the total read pairs passing QC and written out.
+
+Analysis complete.
+	Command being timed: "./demultiplex_fastq_2.py -d /projects/bgmp/sseale/projects/demult/ -r1 1294_S1_L008_R1_001.fastq.gz -r2 1294_S1_L008_R2_001.fastq.gz -r3 1294_S1_L008_R3_001.fastq.gz -r4 1294_S1_L008_R4_001.fastq.gz"
+	User time (seconds): 39899.58
+	System time (seconds): 34424.68
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 21:13:11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 45096
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 466243183
+	Voluntary context switches: 4104957
+	Involuntary context switches: 359540
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
