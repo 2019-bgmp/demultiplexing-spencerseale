@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#SBATCH --partition=bgmp        ### Partition (like a queue in PBS)
+#SBATCH --job-name=demultiplx_FASTQ    ### Job Name
+#SBATCH --output=slurm-%j-%x.out         ### File in which to store job output
+#SBATCH --time=0-25:00:00       ### Wall clock time limit in Days-HH:MM:SS
+#SBATCH --nodes=1               ### Number of nodes needed for the job
+#SBATCH --ntasks-per-node=1     ### Number of tasks to be launched per Node
+#SBATCH --account=bgmp      ### Account used for job submission
+#SBATCH --cpus-per-task=1    ### Number of cpus (cores) per task
+
+conda activate bgmp_py3
+
+/usr/bin/time -v ./demultiplex_fastq_2.py \
+-d /projects/bgmp/sseale/projects/demult/ \
+-r1 1294_S1_L008_R1_001.fastq.gz \
+-r2 1294_S1_L008_R2_001.fastq.gz \
+-r3 1294_S1_L008_R3_001.fastq.gz \
+-r4 1294_S1_L008_R4_001.fastq.gz \
