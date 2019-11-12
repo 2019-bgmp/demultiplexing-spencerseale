@@ -19,7 +19,7 @@ args = get_args()
 #setting coverage cutoff
 #if mean of r1/r4 is at or above the bio_cutoff, quality passes
 #if single nt in r2/r3 is below idx_cutoff, quality fails
-idx_cutoff = 29
+idx_cutoff = 30
 bio_cutoff = 25
 
 #file containing indices used in sequencing run
@@ -43,6 +43,15 @@ direct = args.dir
 # R2 = "/projects/bgmp/sseale/projects/demult/demultiplexing-spencerseale/unit-tests/r2.fq.gz"
 # R3 = "/projects/bgmp/sseale/projects/demult/demultiplexing-spencerseale/unit-tests/r3.fq.gz"
 # R4 = "/projects/bgmp/sseale/projects/demult/demultiplexing-spencerseale/unit-tests/r4.fq.gz"
+
+#dictionary for nucleotide compliments
+seqKey = {
+"A": "T",
+"T": "A",
+"G": "C",
+"C": "G",
+"N": "N"
+}
 
 #function to read record
 def read_record(read_file, read_list):
@@ -73,13 +82,6 @@ def write_record(file_r1, file_r2):
 
 #function will take in a sequence and return its reverse compliment
 def rev_comp(seq):
-    seqKey = {
-    "A": "T",
-    "T": "A",
-    "G": "C",
-    "C": "G",
-    "N": "N"
-    }
     revComp = ""
     for nt in range(len(seq)-1, -1, -1):
         revComp += seqKey[seq[nt]]
